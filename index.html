@@ -1,0 +1,250 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="es-MX">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Escolar</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', 'Arial', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(to right, #5b0000, #7d0c0c, #a11212);
+      padding: 2rem;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 4rem;
+      background: linear-gradient(90deg, #ff9999, #ff4d4d, #ff1a1a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #1a0004;
+    }
+
+    nav p {
+      color: #ff8080;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #ff4d4d;
+      transition: transform 0.6s ease;
+    }
+
+    section.visible h2 {
+      transform: scale(1.05);
+    }
+
+    section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 1px solid #ff4d4d;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(255, 77, 77, 0.3);
+    }
+
+    .music-btn {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff3333;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+
+    .music-btn:hover {
+      background-color: #cc0000;
+    }
+
+    .music-btn:active {
+      transform: scale(0.95);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1a0004;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .card {
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kaisel</h1>
+    <img src="InShot_20250609_223754128.gif"
+        
+         style="width: 120px; margin-top: 1rem;"
+         onerror="this.style.display='none'">
+    <p>Aqui puse el rollo final para salir de la school</p>
+    <button class="music-btn" onclick="toggleMusica()" id="btnMusica"> Reproducir música</button>
+    <audio id="musica" loop onerror="document.getElementById('btnMusica').style.display='none'">
+      <source src="action_time.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <nav>
+    <p><b>Siganme en insta <strong>crak_mrxs</strong></b></p>
+  </nav>
+
+  <section id="inicio">
+    <a href="hist.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <h2>Historia universal contemporanea</h2>
+        <p>Conoce mas sobre el Neoliberalismo y pon a prueba tus conocimientos.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="julio">
+    <a href="der.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <h2>Derecho</h2>
+        <p>Conoce un poco sobre las ramas del derecho y sus aplicaciones en la vida cotidiana.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="goku">
+    <a href="filo.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <h2>Filosofia</h2>
+        <p>Conoce acerca de la identidad mexicana.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="tema">
+    <a href="mate.html" target="_blank" style="text-decoration: none; color:inherit;">
+      <div class="card">
+        <h2>Calculo integral</h2>
+        <p>Te mostrare sobre las integrales y algunos metodos para poder resolverlas.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="final">
+    <a href="ing.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <h2>Temas selectos de ingles</h2>
+        <p>Te muestro un anuncio sobre las actividades que realicae en la clase de ingles.</p>
+      </div>
+    </a>
+  </section>
+
+  <footer>
+    © 2025 · Creada por Marcos TLR. · Proyecto escolar
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const showOnScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < trigger) {
+          section.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", showOnScroll);
+    window.addEventListener("load", showOnScroll);
+
+    function toggleMusica() {
+      const musica = document.getElementById("musica");
+      const btn = document.getElementById("btnMusica");
+
+      if (musica.paused) {
+        musica.play();
+        btn.textContent = " Pausar música";
+      } else {
+        musica.pause();
+        btn.textContent = " Reproducir música";
+      }
+    }
+  </script>
+
+</body>
+</html>

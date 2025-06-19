@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNICRON Magazine</title>
+  <style>
+    body {
+      margin: 20px;
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background-color: #800000;
+      color: white;
+      padding: 20px 40px;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px #800000aa;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-family: Georgia, serif;
+      background: linear-gradient(90deg, #a78bfa, #f0abfc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.1rem;
+      color: #f0c8c8;
+      font-style: italic;
+    }
+
+    section {
+      background-color: #1f1f1f;
+      padding: 20px 25px;
+      margin-top: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    section h2 {
+      color: #800000;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    section h2 a {
+      color: #800000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    section h2 a:hover {
+      color: #a30000;
+      text-decoration: underline;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      max-width: 700px;
+      box-shadow: 0 0 10px #800000aa;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #7c3aed;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    a.button:hover {
+      background-color: #9f3aff;
+    }
+    .boton-regreso {
+      margin-top: 40px;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      max-width: 700px;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .boton-regreso:hover {
+      background-color: #666;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin: 10px;
+      }
+      header, section, .boton-regreso {
+        max-width: 100%;
+        padding: 15px 20px;
+        margin-top: 15px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      a.button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .boton-regreso {
+        font-size: 1rem;
+        padding: 12px 30px;
+        margin-top: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UNICRON</h1>
+    <p>Edition May 2025</p>
+  </header>
+
+  <section>
+    <h2>Editorial</h2>
+    <p>Welcome to the May issue! Here you'll find short but interesting content on current topics.</p>
+  </section>
+
+  <section>
+    <h2><a href="musica.html">Music</a></h2>
+    <p>Argentine trap continues to grow: artists like Duki, Khea, and Bizarrap carry the voice of a generation that transforms the streets into music.</p>
+  </section>
+
+  <section>
+    <h2><a href="tecnologia.html">Technology</a></h2>
+    <p>Artificial intelligence is already in our lives: from chats to cars. What's next?</p>
+  </section>
+
+  <section>
+    <h2><a href="juegos.html">Gamer culture</a></h2>
+    <p>Video games continue to win hearts: from classics like "Mortal Kombat" to recent hits like "Valorant," Argentine gaming culture is growing and becoming increasingly diverse.</p>
+  </section>
+
+  <section>
+    <a href="ing.html" class="button">← Return to the beginning</a>
+  </section>
+
+</body>
+</html>

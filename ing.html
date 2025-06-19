@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ingles</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .anuncio {
+      width: 60%;
+      min-height: 350px;
+      background: linear-gradient(90deg, #a78bfa, #f0abfc);
+      color: white;
+      padding: 60px 50px;
+      font-size: 26px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      position: relative;
+      animation: fadeInScale 1.5s ease forwards, blink 2s infinite;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .imagen-container {
+      flex: 0 0 150px;
+    }
+
+    .imagen-container img {
+      width: 150px;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .contenido {
+      flex: 1;
+      text-align: center;
+    }
+
+    .contenido p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .botones {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .boton-enlace {
+      display: inline-block;
+      margin: 10px 15px 0;
+      padding: 15px 30px;
+      background-color: white;
+      color: #ff4d4d;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .boton-enlace:hover {
+      background-color: #ffe3e3;
+      color: #cc0000;
+    }
+
+    .boton-regreso {
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .boton-regreso:hover {
+      background-color: #666;
+    }
+
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.9;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .anuncio {
+        width: 90%;
+        min-height: 300px;
+        padding: 40px 30px;
+        font-size: 22px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .imagen-container {
+        flex: none;
+        margin-bottom: 20px;
+      }
+h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(90deg, #a78bfa, #f0abfc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Georgia', serif;
+    }
+      .botones {
+        text-align: center;
+      }
+
+      .boton-enlace {
+        font-size: 18px;
+        padding: 12px 24px;
+      }
+
+      .boton-regreso {
+        font-size: 18px;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Selected English Topics</h1>
+
+  <div class="anuncio" id="anuncio">
+    <div class="imagen-container">
+      <img src="InShot_20250608_013118091.gif" alt="Gif animado" />
+    </div>
+    <div class="contenido">
+      <p>🇺🇸 <strong>Get to know a little about me!!!</strong></p>
+      <p>Click on the links below:</p>
+      <div class="botones">
+        <a href="cur.html" class="boton-enlace" target="_blank">Resume</a>
+        <a href="cafo.html" class="boton-enlace" target="_blank">Formal letter</a>
+        <a href="cain.html" class="boton-enlace" target="_blank">Informal letter</a>
+        <a href="resv.html" class="boton-enlace" target="_blank">Magazine</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="boton-regreso" onclick="location.href='index.html'">
+    ← Return to Home
+  </button>
+</body>
+</html>
